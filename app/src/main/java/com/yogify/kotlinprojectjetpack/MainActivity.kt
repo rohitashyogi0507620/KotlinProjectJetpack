@@ -15,6 +15,7 @@ import com.yogify.kotlinprojectjetpack.RoomDataBase.ContactDataBase
 import com.yogify.kotlinprojectjetpack.databinding.ActivityMainBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,10 +43,16 @@ class MainActivity : AppCompatActivity() {
 
         navView.setupWithNavController(navController)
 
+        // Part :-- >>  1
         database = ContactDataBase.getDataBase(this)
 
         GlobalScope.launch {
-            database.contactDao().insertContact(Contact(0, "Rohitash Yogi", "7611920581", "sdgs"))
+            database.contactDao().insertContact(
+                Contact(
+                    0, "Sankalp Agarwal", "7611920581", "Iageodff",
+                    Date()
+                ,0)
+            )
         }
 
         binding.floatingbutton.setOnClickListener {
@@ -53,5 +60,14 @@ class MainActivity : AppCompatActivity() {
                 Log.d("RoomDataBase", it.toString())
             })
         }
+
+        // Part :-- >>> 2
+
+        // Type Coverter if we need to store other data type in SQLite then need to used type converter
+        // Supported Data Type is :--->> NULL,INTEGER,REAL,TEXT,BLOB
+
+        // Part :-->> 3 Migration from one verion to next  version
+
+
     }
 }
