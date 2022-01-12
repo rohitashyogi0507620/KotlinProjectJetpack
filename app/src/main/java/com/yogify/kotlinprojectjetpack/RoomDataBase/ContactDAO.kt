@@ -15,7 +15,7 @@ interface ContactDAO {
     @Update
     suspend fun updateContact(contact: Contact)
 
-    @Query("select *from contact")
+    @Query("select * from contact")
     fun getContact(): LiveData<List<Contact>>
 
 

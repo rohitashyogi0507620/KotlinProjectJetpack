@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
             database.contactDao().insertContact(
                 Contact(
                     0, "Sankalp Agarwal", "7611920581", "Iageodff",
-                    Date()
-                ,0)
+                    Date(), 0
+                )
             )
         }
 
