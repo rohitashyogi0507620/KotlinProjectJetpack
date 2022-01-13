@@ -9,9 +9,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.room.Room
-import com.yogify.kotlinprojectjetpack.RoomDataBase.Contact
-import com.yogify.kotlinprojectjetpack.RoomDataBase.ContactDataBase
+import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.Contact
+import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.ContactDataBase
 import com.yogify.kotlinprojectjetpack.databinding.ActivityMainBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         // Type Coverter if we need to store other data type in SQLite then need to used type converter
         // Supported Data Type is :--->> NULL,INTEGER,REAL,TEXT,BLOB
 
-        // Part :-->> 3 Migration from one verion to next  version
+        // Part :-->> 3 Migration from one verion to next  ersion
 
 
     }

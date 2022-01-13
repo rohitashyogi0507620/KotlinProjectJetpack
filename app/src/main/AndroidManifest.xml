@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinProjectJetpack">
         <activity
+            android:name=".Architecture_Component.LifeCycleObserver.LifecycleActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Architecture_Component.ViewModule.ViewModuleWorkActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

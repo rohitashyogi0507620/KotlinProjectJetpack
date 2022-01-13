@@ -1,4 +1,4 @@
-package com.yogify.kotlinprojectjetpack.RoomDataBase
+package com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase
 
 import android.content.Context
 import androidx.room.*

@@ -1,4 +1,4 @@
-package com.yogify.kotlinprojectjetpack.RoomDataBase
+package com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
