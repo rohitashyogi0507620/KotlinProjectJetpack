@@ -9,6 +9,7 @@ class Observer: LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     fun oncreatework(){
+
         Log.d("MAIN","On Create Observer")
     }
 }

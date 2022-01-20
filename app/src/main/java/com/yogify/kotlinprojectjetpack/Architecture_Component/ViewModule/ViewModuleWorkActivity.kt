@@ -16,11 +16,14 @@ class ViewModuleWorkActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_module_work)
-        // When there is an configartion change then android recreate activity or fragment
+
+        // When there is an configration change then android recreate activity or fragment
+
         button = findViewById<Button>(R.id.btn_onlcick)
         txtview = findViewById<TextView>(R.id.txtview)
-        viewmodule = ViewModelProvider(this).get(MainViewModule::class.java)
 
+      //  viewmodule = ViewModelProvider(this).get(MainViewModule::class.java) Normal View Module Without Parameters
+        viewmodule = ViewModelProvider(this,MainViewModuleFactory(10)).get(MainViewModule::class.java)
         settext()
 
         button.setOnClickListener {
@@ -33,6 +36,8 @@ class ViewModuleWorkActivity : AppCompatActivity() {
     }
 
     private fun settext() {
+
         txtview.text = viewmodule.count.toString()
+
     }
 }

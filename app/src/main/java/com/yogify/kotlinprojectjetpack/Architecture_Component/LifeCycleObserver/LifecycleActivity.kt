@@ -9,7 +9,9 @@ class LifecycleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lifecycle)
+
         lifecycle.addObserver(Observer())
         Log.d("MAIN","Activity On Create")
+
     }
 }
