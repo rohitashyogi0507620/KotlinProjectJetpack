@@ -64,5 +64,8 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$lifecycle_coroutines"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$lifecycle_coroutines"
 
+    //Gosn for Quest Data
+    implementation 'com.google.code.gson:gson:2.8.9'
+
 
 }
