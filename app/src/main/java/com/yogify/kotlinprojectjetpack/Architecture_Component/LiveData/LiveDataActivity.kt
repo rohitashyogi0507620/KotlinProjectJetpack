@@ -31,8 +31,7 @@ class LiveDataActivity : AppCompatActivity() {
         // Data binding concept is used to bind data into view on xml it self
 
         var singledata = NamedobData("Rohitash yogi", "04-07-1998")
-        binding.name = "Rohitash yogi"
-        binding.dob = "04-07-1998"
+        binding.datauser = singledata
 
     }
 }
