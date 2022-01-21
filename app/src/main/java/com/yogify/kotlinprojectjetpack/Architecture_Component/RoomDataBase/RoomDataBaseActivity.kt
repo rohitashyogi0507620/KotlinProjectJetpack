@@ -5,8 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.yogify.kotlinprojectjetpack.R
-import com.yogify.kotlinprojectjetpack.databinding.ActivityLifecycleBinding
-import com.yogify.kotlinprojectjetpack.databinding.ActivityMainBinding
+
 import com.yogify.kotlinprojectjetpack.databinding.ActivityRoomDataBaseBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

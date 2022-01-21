@@ -1,58 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/textHome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="View Module Work"
-        android:textSize="25dp"
-        tools:ignore="MissingConstraints"></TextView>
+    <data>
 
-    <Button
-        android:id="@+id/btnviewmodule"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Module Work"
-        app:layout_constraintTop_toBottomOf="@id/textHome"
-        tools:ignore="MissingConstraints"></Button>
+    </data>
 
-    <Button
-        android:id="@+id/btnquotesApp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quotes App With ViewModule"
-        app:layout_constraintTop_toBottomOf="@id/btnviewmodule"
-        tools:ignore="MissingConstraints"></Button>
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment">
 
-    <Button
-        android:id="@+id/btnlifecycleobserver"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Life cycle observer"
-        app:layout_constraintTop_toBottomOf="@id/btnquotesApp"
-        tools:ignore="MissingConstraints"></Button>
+        <TextView
+            android:id="@+id/textHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="View Module Work"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints"></TextView>
 
-    <Button
-        android:id="@+id/btnroomdatabase"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Room Data Base"
-        app:layout_constraintTop_toBottomOf="@id/btnlifecycleobserver"
-        tools:ignore="MissingConstraints"></Button>
+        <Button
+            android:id="@+id/btnviewmodule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Module Work"
+            app:layout_constraintTop_toBottomOf="@id/textHome"
+            tools:ignore="MissingConstraints"></Button>
 
-    <Button
-        android:id="@+id/btnlivedata"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Live Data"
-        app:layout_constraintTop_toBottomOf="@id/btnlifecycleobserver"
-        tools:ignore="MissingConstraints"></Button>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnquotesApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quotes App With ViewModule"
+            app:layout_constraintTop_toBottomOf="@id/btnviewmodule"
+            tools:ignore="MissingConstraints"></Button>
+
+        <Button
+            android:id="@+id/btnlifecycleobserver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Life cycle observer"
+            app:layout_constraintTop_toBottomOf="@id/btnquotesApp"
+            tools:ignore="MissingConstraints"></Button>
+
+        <Button
+            android:id="@+id/btnroomdatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room Data Base"
+            app:layout_constraintTop_toBottomOf="@id/btnlifecycleobserver"
+            tools:ignore="MissingConstraints"></Button>
+
+        <Button
+            android:id="@+id/btnlivedata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live Data"
+            app:layout_constraintTop_toBottomOf="@id/btnlifecycleobserver"
+            tools:ignore="MissingConstraints"></Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
