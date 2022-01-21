@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.yogify.kotlinprojectjetpack.Architecture_Component.LifeCycleObserver.LifecycleActivity
+import com.yogify.kotlinprojectjetpack.Architecture_Component.LiveData.LiveDataActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.QuotesApp.QuotesActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.RoomDataBaseActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.ViewModule.ViewModuleWorkActivity
@@ -50,6 +51,9 @@ class HomeFragment : Fragment() {
         }
         binding.btnroomdatabase.setOnClickListener {
             startActivity(Intent(context, RoomDataBaseActivity::class.java))
+        }
+        binding.btnlivedata.setOnClickListener {
+            startActivity(Intent(context, LiveDataActivity::class.java))
         }
 
         return root

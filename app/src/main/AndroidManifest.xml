@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinProjectJetpack.NOActionABr">
         <activity
+            android:name=".Architecture_Component.LiveData.LiveDataActivity"
+            android:exported="true" />
+        <activity
             android:name=".Architecture_Component.RoomDataBase.RoomDataBaseActivity"
             android:exported="true" />
         <activity
