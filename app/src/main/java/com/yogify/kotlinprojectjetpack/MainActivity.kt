@@ -19,7 +19,6 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    lateinit var database: ContactDataBase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -38,34 +37,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_notifications
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        //setupActionBarWithNavController(navController, appBarConfiguration)
 
         navView.setupWithNavController(navController)
 
-        // Part :-- >>  1
-        database = ContactDataBase.getDataBase(this)
 
-        GlobalScope.launch {
-            database.contactDao().insertContact(
-                Contact(
-                    0, "Sankalp Agarwal", "7611920581", "Iageodff",
-                    Date(), 0
-                )
-            )
-        }
-
-        binding.floatingbutton.setOnClickListener {
-            database.contactDao().getContact().observe(this, Observer {
-                Log.d("RoomDataBase", it.toString())
-            })
-        }
-
-        // Part :-- >>> 2
-
-        // Type Coverter if we need to store other data type in SQLite then need to used type converter
-        // Supported Data Type is :--->> NULL,INTEGER,REAL,TEXT,BLOB
-
-        // Part :-->> 3 Migration from one verion to next  ersion
 
 
     }

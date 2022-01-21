@@ -10,19 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinProjectJetpack.NOActionABr">
         <activity
+            android:name=".Architecture_Component.RoomDataBase.RoomDataBaseActivity"
+            android:exported="true" />
+        <activity
             android:name=".Architecture_Component.ViewModule.ViewModuleWorkActivity"
             android:exported="true" />
         <activity
             android:name=".Architecture_Component.LifeCycleObserver.LifecycleActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Architecture_Component.QuotesApp.QuotesActivity"
             android:exported="true" />
         <activity
-            android:name=".Architecture_Component.QuotesApp.QuotesActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,8 +34,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-
     </application>
 
 </manifest>

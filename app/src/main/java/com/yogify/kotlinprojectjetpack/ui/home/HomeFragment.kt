@@ -1,5 +1,6 @@
 package com.yogify.kotlinprojectjetpack.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.yogify.kotlinprojectjetpack.Architecture_Component.LifeCycleObserver.LifecycleActivity
+import com.yogify.kotlinprojectjetpack.Architecture_Component.QuotesApp.QuotesActivity
+import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.RoomDataBaseActivity
+import com.yogify.kotlinprojectjetpack.Architecture_Component.ViewModule.ViewModuleWorkActivity
 import com.yogify.kotlinprojectjetpack.R
 import com.yogify.kotlinprojectjetpack.databinding.FragmentHomeBinding
 
@@ -25,8 +30,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -35,6 +39,19 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
+        binding.btnquotesApp.setOnClickListener {
+            startActivity(Intent(context, QuotesActivity::class.java))
+        }
+        binding.btnlifecycleobserver.setOnClickListener {
+            startActivity(Intent(context, LifecycleActivity::class.java))
+        }
+        binding.btnviewmodule.setOnClickListener {
+            startActivity(Intent(context, ViewModuleWorkActivity::class.java))
+        }
+        binding.btnroomdatabase.setOnClickListener {
+            startActivity(Intent(context, RoomDataBaseActivity::class.java))
+        }
+
         return root
     }
 
