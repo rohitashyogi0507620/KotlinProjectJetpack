@@ -10,11 +10,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.yogify.kotlinprojectjetpack.Architecture_Component.LifeCycleObserver.LifecycleActivity
-import com.yogify.kotlinprojectjetpack.Architecture_Component.LiveData.LiveDataActivity
+import com.yogify.kotlinprojectjetpack.LiveData.LiveDataActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.QuotesApp.QuotesActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.RoomDataBaseActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.ViewModule.ViewModuleWorkActivity
-import com.yogify.kotlinprojectjetpack.R
 import com.yogify.kotlinprojectjetpack.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

@@ -10,8 +10,8 @@
             type="com.yogify.kotlinprojectjetpack.NamedobData" />
 
         <variable
-            name="liveuserdata"
-            type="com.yogify.kotlinprojectjetpack.NamedobData" />
+            name="liveviewmodule"
+            type="com.yogify.kotlinprojectjetpack.LiveDatabindingViewModule" />
     </data>
 
 
@@ -88,7 +88,7 @@
                 android:gravity="center"
                 android:hint="Name"
                 android:padding="20dp"
-                android:text="@{liveuserdata.name}"
+                android:text="@{liveviewmodule.namelivedata.name}"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/btnupdatadata"
@@ -100,17 +100,17 @@
                 android:gravity="center"
                 android:hint="Date of birth"
                 android:padding="20dp"
-                android:text="@{liveuserdata.dob}"
+                android:text="@{liveviewmodule.namelivedata.dob}"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/txtname"
                 tools:ignore="MissingConstraints" />
 
             <Button
-                android:id="@+id/btndatabindingwithlivedata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:onClick="@{()->liveviewmodule.updatelivedata()}"
                 android:text="Data Binding Live Data"
                 app:layout_constraintTop_toBottomOf="@id/txtdata"
                 tools:ignore="MissingConstraints"></Button>

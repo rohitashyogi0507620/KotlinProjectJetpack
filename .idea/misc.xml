@@ -6,6 +6,7 @@
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/drawable/background_gradient.xml" value="0.1824074074074074" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/font/biryani_extralight.xml" value="0.234375" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/activity_lifecycle.xml" value="0.20416666666666666" />
+        <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/activity_live_data.xml" value="0.20416666666666666" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/activity_main.xml" value="0.19537037037037036" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/activity_quotes.xml" value="0.18" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/activity_quotes2.xml" value="0.19010416666666666" />
@@ -13,6 +14,7 @@
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/activity_view_module_work.xml" value="0.18" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/KotlinProjectJetpack/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/KotlinProjectJetpack/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19537037037037036" />
       </map>
     </option>

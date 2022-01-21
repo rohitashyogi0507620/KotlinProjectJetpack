@@ -1,10 +1,11 @@
-package com.yogify.kotlinprojectjetpack.Architecture_Component.LiveData
+package com.yogify.kotlinprojectjetpack.LiveData
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.yogify.kotlinprojectjetpack.LiveDatabindingViewModule
 import com.yogify.kotlinprojectjetpack.NamedobData
 import com.yogify.kotlinprojectjetpack.R
 import com.yogify.kotlinprojectjetpack.databinding.ActivityLiveDataBinding
@@ -33,16 +34,13 @@ class LiveDataActivity : AppCompatActivity() {
         binding.datauser = singledata
 
         // Data Binding with Live data
+        // Create then Set Lifecycler Owner
+        // Then Set Data
 
         bindinviewmodule = ViewModelProvider(this).get(LiveDatabindingViewModule::class.java)
+        binding.lifecycleOwner = this
+        binding.liveviewmodule=bindinviewmodule
 
-        bindinviewmodule.namelivedata.observe(this, Observer {
-            binding.liveuserdata = it
-        })
-
-        binding.btndatabindingwithlivedata.setOnClickListener {
-            bindinviewmodule.updatelivedata(NamedobData("Seema", "5-10-2000"))
-        }
 
     }
 }
