@@ -15,106 +15,127 @@
     </data>
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
-        <TextView
-            android:id="@+id/txtdata"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Live Data"
-            android:padding="20dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints" />
+            android:layout_height="match_parent">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/purple_500"
-            app:layout_constraintTop_toBottomOf="@id/txtdata" />
-
-        <Button
-            android:id="@+id/btnupdatadata"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="Update Live DAta"
-            app:layout_constraintTop_toBottomOf="@id/txtdata"
-            tools:ignore="MissingConstraints"></Button>
-
-        <TextView
-            android:id="@+id/txtname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Name"
-            android:padding="20dp"
-            android:text="@{datauser.name}"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/btnupdatadata"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/tcxtdob"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Date of birth"
-            android:padding="20dp"
-            android:text="@{datauser.dob}"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/txtname"
-            tools:ignore="MissingConstraints" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/tcxtdob">
+            <TextView
+                android:id="@+id/txtdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Live Data"
+                android:padding="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/purple_500" />
+                android:background="@color/purple_500"
+                app:layout_constraintTop_toBottomOf="@id/txtdata" />
+
+            <Button
+                android:id="@+id/btnupdatadata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Update Live DAta"
+                app:layout_constraintTop_toBottomOf="@id/txtdata"
+                tools:ignore="MissingConstraints"></Button>
 
             <TextView
+                android:id="@+id/txtname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Name"
                 android:padding="20dp"
-                android:text="@{liveviewmodule.namelivedata.name}"
+                android:text="@{datauser.name}"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/btnupdatadata"
                 tools:ignore="MissingConstraints" />
 
             <TextView
+                android:id="@+id/tcxtdob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Date of birth"
                 android:padding="20dp"
-                android:text="@{liveviewmodule.namelivedata.dob}"
+                android:text="@{datauser.dob}"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/txtname"
                 tools:ignore="MissingConstraints" />
 
-            <Button
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:onClick="@{()->liveviewmodule.updatelivedata()}"
-                android:text="Data Binding Live Data"
-                app:layout_constraintTop_toBottomOf="@id/txtdata"
-                tools:ignore="MissingConstraints"></Button>
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tcxtdob">
 
-        </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/purple_500" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:padding="20dp"
+                    android:text="@{liveviewmodule.namelivedata.name}"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DOB"
+                    android:padding="20dp"
+                    android:text="@{liveviewmodule.namelivedata.dob}"></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Name"
+                    android:padding="20dp"
+                    android:text="@{liveviewmodule.namelivedata.name}"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/btnupdatadata"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Date of birth"
+                    android:padding="20dp"
+                    android:text="@{liveviewmodule.namelivedata.dob}"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/txtname"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:onClick="@{()->liveviewmodule.updatelivedata()}"
+                    android:text="Data Binding Live Data"
+                    app:layout_constraintTop_toBottomOf="@id/txtdata"
+                    tools:ignore="MissingConstraints"></Button>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 </layout>

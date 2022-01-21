@@ -33,13 +33,14 @@ class LiveDataActivity : AppCompatActivity() {
         var singledata = NamedobData("Rohitash yogi", "04-07-1998")
         binding.datauser = singledata
 
+        // One Way Data Binding Where Data Flow One side , Only to the views
         // Data Binding with Live data
         // Create then Set Lifecycler Owner
-        // Then Set Data
+        // Then View Module
 
         bindinviewmodule = ViewModelProvider(this).get(LiveDatabindingViewModule::class.java)
         binding.lifecycleOwner = this
-        binding.liveviewmodule=bindinviewmodule
+        binding.liveviewmodule = bindinviewmodule
 
 
     }
