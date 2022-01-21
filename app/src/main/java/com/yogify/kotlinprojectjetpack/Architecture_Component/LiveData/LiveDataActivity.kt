@@ -10,7 +10,9 @@ import com.yogify.kotlinprojectjetpack.R
 import com.yogify.kotlinprojectjetpack.databinding.ActivityLiveDataBinding
 
 class LiveDataActivity : AppCompatActivity() {
-    lateinit var mainViewModule: LiveDataViewModule
+    lateinit var mainViewModule: LiveDataViewModule // simple Data View module andorid
+    lateinit var bindinviewmodule: LiveDatabindingViewModule
+
     lateinit var binding: ActivityLiveDataBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +31,18 @@ class LiveDataActivity : AppCompatActivity() {
 
         var singledata = NamedobData("Rohitash yogi", "04-07-1998")
         binding.datauser = singledata
+
+        // Data Binding with Live data
+
+        bindinviewmodule = ViewModelProvider(this).get(LiveDatabindingViewModule::class.java)
+
+        bindinviewmodule.namelivedata.observe(this, Observer {
+            binding.liveuserdata = it
+        })
+
+        binding.btndatabindingwithlivedata.setOnClickListener {
+            bindinviewmodule.updatelivedata(NamedobData("Seema", "5-10-2000"))
+        }
 
     }
 }
