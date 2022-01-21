@@ -7,9 +7,7 @@
 
         <variable
             name="datauser"
-            type="com.yogify.kotlinprojectjetpack.Architecture_Component.LiveData.NamedobData" />
-
-
+            type="com.yogify.kotlinprojectjetpack.NamedobData" />
     </data>
 
 
