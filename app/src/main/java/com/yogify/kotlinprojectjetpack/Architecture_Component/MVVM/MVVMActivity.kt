@@ -51,6 +51,7 @@ class MVVMActivity : AppCompatActivity() {
         repository = ContactRepository(dao)
         viewmodule = ViewModelProvider(
             this,
+
             MvvmViewModuleFactory(repository)
         ).get(MvvmviewModule::class.java)
 
@@ -58,6 +59,7 @@ class MVVMActivity : AppCompatActivity() {
 
             viewmodule.getContact().observe(this, androidx.lifecycle.Observer {
                 Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+                binding.data = it.toString()
             })
         }
 
