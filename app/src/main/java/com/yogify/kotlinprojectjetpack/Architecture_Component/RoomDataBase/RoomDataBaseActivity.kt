@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import com.yogify.kotlinprojectjetpack.R
 
 import com.yogify.kotlinprojectjetpack.databinding.ActivityRoomDataBaseBinding
@@ -16,8 +17,7 @@ class RoomDataBaseActivity : AppCompatActivity() {
     lateinit var binding: ActivityRoomDataBaseBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRoomDataBaseBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_room_data_base)
 
 
         // Part :-- >>  1

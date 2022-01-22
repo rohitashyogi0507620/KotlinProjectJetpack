@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Architecture_Component.MVVM.MVVMActivity">
+
+        <EditText
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Name"
+           ></EditText>
+
+        <EditText
+            android:id="@+id/txtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Phone Number"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/txtimageurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Image Url"
+            ></EditText>
+
+        <Button
+            android:id="@+id/btninsertData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert Data"></Button>
+
+        <Button
+            android:id="@+id/btngetdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GEt Data"></Button>
+
+
+    </LinearLayout>
+
+
+</layout>

@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.yogify.kotlinprojectjetpack.LiveDatabindingViewModule
+import com.yogify.kotlinprojectjetpack.LoadImageData
 import com.yogify.kotlinprojectjetpack.NamedobData
 import com.yogify.kotlinprojectjetpack.R
 import com.yogify.kotlinprojectjetpack.databinding.ActivityLiveDataBinding
@@ -42,6 +43,11 @@ class LiveDataActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
         binding.liveviewmodule = bindinviewmodule
 
+
+        // Used Data binding Adapter , Used To Load Custom code
+
+        var loadImageData= LoadImageData("Shreya / Parik","Wedding Shoot at Jaipur","https://i0.wp.com/shaadiwish.com/blog/wp-content/uploads/2017/03/79-1-2.jpeg")
+        binding.loadImageData=loadImageData
 
     }
 }

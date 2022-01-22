@@ -10,7 +10,7 @@ class Converters {
     }
 
     @TypeConverter
-    fun fromLondToDate(value: Long): Date {
+    fun fromLongToDate(value: Long): Date {
         return Date(value)
     }
 }

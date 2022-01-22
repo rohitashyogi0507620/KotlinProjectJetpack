@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yogify.kotlinprojectjetpack">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinProjectJetpack.NOActionABr">
         <activity
-            android:name="com.yogify.kotlinprojectjetpack.LiveData.LiveDataActivity"
+            android:name=".Architecture_Component.MVVM.MVVMActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LiveData.LiveDataActivity"
             android:exported="true" />
         <activity
             android:name=".Architecture_Component.RoomDataBase.RoomDataBaseActivity"
