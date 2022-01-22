@@ -13,6 +13,7 @@ import com.yogify.kotlinprojectjetpack.Architecture_Component.LifeCycleObserver.
 import com.yogify.kotlinprojectjetpack.Architecture_Component.MVVM.MVVMActivity
 import com.yogify.kotlinprojectjetpack.LiveData.LiveDataActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.QuotesApp.QuotesActivity
+import com.yogify.kotlinprojectjetpack.Architecture_Component.Retrofit.RetrofitActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.RoomDataBaseActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.ViewModule.ViewModuleWorkActivity
 import com.yogify.kotlinprojectjetpack.databinding.FragmentHomeBinding
@@ -54,6 +55,9 @@ class HomeFragment : Fragment() {
         }
         binding.btnmvvmData.setOnClickListener {
             startActivity(Intent(context, MVVMActivity::class.java))
+        }
+        binding.btnretrofitwork.setOnClickListener {
+            startActivity(Intent(context, RetrofitActivity::class.java))
         }
 
         return root

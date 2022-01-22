@@ -50,14 +50,19 @@
             android:text="GEt Data"></Button>
 
         <TextView
-            android:hint="Data"
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Data"
             android:text="@{data}"
-            android:textSize="20dp">
+            android:textSize="20dp"></TextView>
 
-        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/item_view"
+            android:id="@+id/recylearview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
 
 
     </LinearLayout>
