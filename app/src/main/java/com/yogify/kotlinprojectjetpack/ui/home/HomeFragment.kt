@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.yogify.kotlinprojectjetpack.Architecture_Component.LifeCycleObserver.LifecycleActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.MVVM.MVVMActivity
+import com.yogify.kotlinprojectjetpack.Architecture_Component.MvvmWithRetrofit_NewsApp.MvvmRetrofitActivity
 import com.yogify.kotlinprojectjetpack.LiveData.LiveDataActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.QuotesApp.QuotesActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.Retrofit.RetrofitActivity
@@ -56,8 +57,8 @@ class HomeFragment : Fragment() {
         binding.btnmvvmData.setOnClickListener {
             startActivity(Intent(context, MVVMActivity::class.java))
         }
-        binding.btnretrofitwork.setOnClickListener {
-            startActivity(Intent(context, RetrofitActivity::class.java))
+        binding.btnmvvmwithretrofit.setOnClickListener {
+            startActivity(Intent(context, MvvmRetrofitActivity::class.java))
         }
 
         return root
