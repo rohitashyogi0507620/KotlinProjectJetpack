@@ -17,6 +17,7 @@ import com.yogify.kotlinprojectjetpack.Architecture_Component.QuotesApp.QuotesAc
 import com.yogify.kotlinprojectjetpack.Architecture_Component.Retrofit.RetrofitActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.RoomDataBaseActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.ViewModule.ViewModuleWorkActivity
+import com.yogify.kotlinprojectjetpack.Architecture_Component.WorkManager.WorkManagerActivity
 import com.yogify.kotlinprojectjetpack.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -59,6 +60,9 @@ class HomeFragment : Fragment() {
         }
         binding.btnmvvmwithretrofit.setOnClickListener {
             startActivity(Intent(context, MvvmRetrofitActivity::class.java))
+        }
+        binding.btnworkmanager.setOnClickListener {
+            startActivity(Intent(context, WorkManagerActivity::class.java))
         }
 
         return root

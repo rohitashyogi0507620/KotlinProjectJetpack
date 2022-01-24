@@ -33,7 +33,7 @@ android {
     buildFeatures {
         dataBinding true
     }
-  
+
 }
 
 dependencies {
@@ -74,5 +74,13 @@ dependencies {
     // Coroutines Library
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$lifecycle_coroutines"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$lifecycle_coroutines"
+
+    // Work mamanger
+
+    def work_version = "2.7.1"
+
+    // Kotlin + coroutines
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
 
 }
