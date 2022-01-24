@@ -12,14 +12,16 @@ import com.yogify.kotlinprojectjetpack.R
 class AdapterQuotes : ListAdapter<Result, AdapterQuotes.viewholder>(Diffutil()) {
 
     class viewholder(view: View) : RecyclerView.ViewHolder(view) {
+        val txticon = view.findViewById<TextView>(R.id.txticon)
         val auther = view.findViewById<TextView>(R.id.txtauther)
         val content = view.findViewById<TextView>(R.id.txtcontent)
-        val date = view.findViewById<TextView>(R.id.txtdata)
+        val date = view.findViewById<TextView>(R.id.txtpublishdata)
 
         fun bind(item: Result) {
+            txticon.text = item.author.subSequence(0, 1)
             auther.text = item.author
             content.text = item.content
-            date.text = item.dateModified
+            date.text = item.dateModified.toString()
         }
     }
 
@@ -47,7 +49,4 @@ class AdapterQuotes : ListAdapter<Result, AdapterQuotes.viewholder>(Diffutil()) 
 
     }
 
-    fun dataChanged(){
-        notifyDataSetChanged()
-    }
 }
