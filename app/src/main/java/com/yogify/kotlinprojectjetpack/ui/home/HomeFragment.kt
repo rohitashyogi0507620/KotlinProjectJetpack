@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.yogify.kotlinprojectjetpack.Architecture_Component.Android_Paging.PagingActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.LifeCycleObserver.LifecycleActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.MVVM.MVVMActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.MvvmWithRetrofit_NewsApp.MvvmRetrofitActivity
@@ -63,6 +64,9 @@ class HomeFragment : Fragment() {
         }
         binding.btnworkmanager.setOnClickListener {
             startActivity(Intent(context, WorkManagerActivity::class.java))
+        }
+        binding.pagepagging.setOnClickListener {
+            startActivity(Intent(context, PagingActivity::class.java))
         }
 
         return root
