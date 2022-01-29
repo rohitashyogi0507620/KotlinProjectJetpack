@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Architecture_Component.Retrofit.RetrofitActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylearview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/btnchnagedata"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:listitem="@layout/item_view"></androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btnchnagedata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Data"
+            app:layout_constraintBottom_toBottomOf="parent"></Button>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progerssbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:chainUseRtl="true"
+            app:indicatorSize="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/recylearview"
+            app:layout_constraintEnd_toEndOf="@+id/recylearview"
+            app:layout_constraintStart_toStartOf="@+id/recylearview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:showAnimationBehavior="outward"></com.google.android.material.progressindicator.CircularProgressIndicator>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
