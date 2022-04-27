@@ -19,6 +19,7 @@ import com.yogify.kotlinprojectjetpack.Architecture_Component.Retrofit.RetrofitA
 import com.yogify.kotlinprojectjetpack.Architecture_Component.RoomDataBase.RoomDataBaseActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.ViewModule.ViewModuleWorkActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.WorkManager.WorkManagerActivity
+import com.yogify.kotlinprojectjetpack.NewChanges.FirstActivity
 import com.yogify.kotlinprojectjetpack.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -67,6 +68,9 @@ class HomeFragment : Fragment() {
         }
         binding.pagepagging.setOnClickListener {
             startActivity(Intent(context, PagingActivity::class.java))
+        }
+        binding.startactivityforresult.setOnClickListener {
+            startActivity(Intent(context, FirstActivity::class.java))
         }
 
         return root

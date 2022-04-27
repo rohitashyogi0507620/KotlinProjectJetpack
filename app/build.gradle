@@ -84,8 +84,10 @@ dependencies {
 
     // Paging in android
 
-    def paging_version = "2.1.2"
+    def paging_version = "3.0.0" //current version at the time
+
     implementation "androidx.paging:paging-runtime:$paging_version"
+
 
 
 }

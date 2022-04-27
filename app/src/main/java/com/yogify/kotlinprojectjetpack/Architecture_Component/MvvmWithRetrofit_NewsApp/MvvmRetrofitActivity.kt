@@ -34,10 +34,7 @@ class MvvmRetrofitActivity : AppCompatActivity() {
 
         val repository = (application as ApplicationClass).newsRepository
 
-        viewmodule = ViewModelProvider(
-            this,
-            NewsViewModuleFactory(repository)
-        ).get(NewsViewModule::class.java)
+        viewmodule = ViewModelProvider(this, NewsViewModuleFactory(repository)).get(NewsViewModule::class.java)
 
         viewmodule.articallist.observe(this, Observer {
             if (it != null) {
