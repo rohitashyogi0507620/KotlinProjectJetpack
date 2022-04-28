@@ -105,7 +105,8 @@ class FirstActivity : AppCompatActivity() {
         }
 
     fun fun_getimages(view: View) {
-        requestImageFromGallery.launch("image/*")
+        //requestImageFromGallery.launch("image/*")
+        requestImageFromGallery.launch("video/*")
     }
 
 }
