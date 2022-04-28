@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -29,6 +30,8 @@ class FirstActivity : AppCompatActivity() {
 
     fun fun_startactivity(view: View) {
         //contract.launch("I Am From Main Activity")
+        Log.d("ActivityForResult", "First activity")
+
         startActivityForResult.launch(
             Intent(
                 applicationContext, SecondActivity::class.java
@@ -38,9 +41,12 @@ class FirstActivity : AppCompatActivity() {
 
     private val startActivityForResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { actiivtyresult ->
-          if (actiivtyresult.resultCode==1002){
-             txt.text= actiivtyresult.data?.getStringExtra("Name")
-          }
+            if (actiivtyresult.resultCode == 1002) {
+                Log.d("ActivityForResult", "Result Method Called")
+                txt.text = actiivtyresult.data?.getStringExtra("Name").toString()
+                Log.d("ActivityForResult", actiivtyresult.data?.getStringExtra("Name").toString())
+
+            }
         }
 
     // Request For Multi Permsion
@@ -89,6 +95,17 @@ class FirstActivity : AppCompatActivity() {
 
     fun fun_SingleRequestPermission(view: View) {
         singlePermissionCallback.launch(Manifest.permission.ACCESS_FINE_LOCATION)
+    }
+
+    private val requestImageFromGallery =
+        registerForActivityResult(ActivityResultContracts.GetContent()) { imageurl ->
+            if (imageurl != null) {
+                Log.d("ActivityForResult", imageurl.toString())
+            }
+        }
+
+    fun fun_getimages(view: View) {
+        requestImageFromGallery.launch("image/*")
     }
 
 }
