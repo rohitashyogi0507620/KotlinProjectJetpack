@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import com.yogify.kotlinprojectjetpack.R
 
@@ -27,8 +28,20 @@ class FirstActivity : AppCompatActivity() {
     }
 
     fun fun_startactivity(view: View) {
-        contract.launch("I Am From Main Activity")
+        //contract.launch("I Am From Main Activity")
+        startActivityForResult.launch(
+            Intent(
+                applicationContext, SecondActivity::class.java
+            )
+        )
     }
+
+    private val startActivityForResult =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { actiivtyresult ->
+          if (actiivtyresult.resultCode==1002){
+             txt.text= actiivtyresult.data?.getStringExtra("Name")
+          }
+        }
 
     // Request For Multi Permsion
     private val multiPermissionCallback =

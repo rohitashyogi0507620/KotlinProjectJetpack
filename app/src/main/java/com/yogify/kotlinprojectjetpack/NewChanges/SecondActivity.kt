@@ -14,12 +14,15 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
         txt = findViewById(R.id.txtview)
-        txt.text=intent.getStringExtra("Name")
+        txt.text = intent.getStringExtra("Name")
 
     }
 
     fun fun_SendToactivity(view: View) {
-       // finish()
+        setResult(1002, Intent().apply {
+            intent.putExtra("Name", "Hello Rohitash")
+        })
+        finish()
     }
 
 }
