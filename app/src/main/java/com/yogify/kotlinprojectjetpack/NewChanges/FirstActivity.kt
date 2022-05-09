@@ -2,6 +2,7 @@ package com.yogify.kotlinprojectjetpack.NewChanges
 
 import android.Manifest
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -108,5 +109,17 @@ class FirstActivity : AppCompatActivity() {
         //requestImageFromGallery.launch("image/*")
         requestImageFromGallery.launch("video/*")
     }
+
+    fun fun_capturevideo(view: View) {
+        val imageUri: Uri = Uri.parse("Sdgdsg");
+        //requestCapturePhoto.launch(imageUri)
+    }
+
+    private val requestCapturePhoto =
+        registerForActivityResult(ActivityResultContracts.TakePicture()) { imageurl ->
+            if (imageurl != null) {
+                Log.d("ActivityForResult", imageurl.toString())
+            }
+        }
 
 }
