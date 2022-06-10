@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.yogify.kotlinprojectjetpack.Architecture_Component.Android_Paging.Hilt_Dependency.HiltActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.Android_Paging.PagingActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.LifeCycleObserver.LifecycleActivity
 import com.yogify.kotlinprojectjetpack.Architecture_Component.MVVM.MVVMActivity
@@ -71,6 +72,9 @@ class HomeFragment : Fragment() {
         }
         binding.startactivityforresult.setOnClickListener {
             startActivity(Intent(context, FirstActivity::class.java))
+        }
+        binding.startHiltactivity.setOnClickListener {
+            startActivity(Intent(context, HiltActivity::class.java))
         }
 
         return root
