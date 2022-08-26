@@ -9,6 +9,12 @@
     android:orientation="vertical"
     tools:context=".NewChanges.FirstActivity">
 
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </ImageView>
+
     <TextView
         android:id="@+id/txtview"
         android:layout_width="match_parent"
@@ -22,13 +28,27 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="fun_getvideo"
+        android:text="Get Video From Gallery"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="fun_capturevideo"
         android:text="Capture Video"></Button>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="fun_getimages"
         android:text="Get Image From Gallery"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fun_captureimage"
+        android:text="Capture Image"></Button>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,8 +68,9 @@
         android:text="Request Single Permission"></Button>
 
     <Button
-        android:layout_width="wrap_content"
+        android:text="Permission"
         android:id="@+id/btn_permission"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:enabled="false"

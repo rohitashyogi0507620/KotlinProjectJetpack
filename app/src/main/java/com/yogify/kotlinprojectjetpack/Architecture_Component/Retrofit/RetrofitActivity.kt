@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.view.OnReceiveContentListener
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
@@ -16,7 +17,7 @@ import com.yogify.kotlinprojectjetpack.databinding.ActivityRetrofitBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class RetrofitActivity : AppCompatActivity() {
+class RetrofitActivity : AppCompatActivity()  {
     lateinit var binding: ActivityRetrofitBinding
     lateinit var quoteslist: MutableList<Result>
     override fun onCreate(savedInstanceState: Bundle?) {

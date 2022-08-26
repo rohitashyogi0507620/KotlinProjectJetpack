@@ -90,8 +90,7 @@ dependencies {
 
     // Paging in android
 
-    def paging_version = "3.0.0" //current version at the time
-
+    def paging_version = "2.1.2"
     implementation "androidx.paging:paging-runtime:$paging_version"
 
     implementation "com.google.dagger:hilt-android:2.38.1"

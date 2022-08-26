@@ -7,13 +7,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission
-        android:name="android.permission.ACCESS_FINE_LOCATION"
-        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" tools:ignore="CoarseFineLocation" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-<!--    android:name=".Architecture_Component.MvvmWithRetrofit_NewsApp.ApplicationClass"-->
 
     <application
         android:name=".Architecture_Component.Hilt_Dependency.HiltApplication"
@@ -27,7 +24,6 @@
         <activity
             android:name="com.yogify.kotlinprojectjetpack.Architecture_Component.Hilt_Dependency.HiltActivity"
             android:exported="false"
-            android:label="@string/title_activity_hilt"
             android:theme="@style/Theme.KotlinProjectJetpack.NOActionABr" />
         <activity
             android:name=".NewChanges.SecondActivity"
@@ -78,6 +74,17 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.yogify.kotlinprojectjetpack.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>

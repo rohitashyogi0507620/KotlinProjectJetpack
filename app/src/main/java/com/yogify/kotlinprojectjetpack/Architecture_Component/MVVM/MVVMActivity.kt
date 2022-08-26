@@ -33,7 +33,6 @@ class MVVMActivity : AppCompatActivity() {
         database = ContactDataBase.getDataBase(this)
 
 
-
         binding.btninsertData.setOnClickListener {
             GlobalScope.launch {
                 database.contactDao().insertContact(

@@ -16,6 +16,18 @@
             android:id="@+id/recylearview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp"
             tools:listitem="@layout/item_newsarticle"></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progerssbar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="@+id/recylearview"
+            app:layout_constraintEnd_toEndOf="@+id/recylearview"
+            app:layout_constraintStart_toStartOf="@+id/recylearview"
+            app:layout_constraintTop_toTopOf="@+id/recylearview"></androidx.core.widget.ContentLoadingProgressBar>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -71,9 +71,9 @@ class HomeFragment : Fragment() {
         binding.startactivityforresult.setOnClickListener {
             startActivity(Intent(context, FirstActivity::class.java))
         }
-        binding.startHiltactivity.setOnClickListener {
-            startActivity(Intent(context, HiltActivity::class.java))
-        }
+//        binding.startHiltactivity.setOnClickListener {
+//            startActivity(Intent(context, HiltActivity::class.java))
+//        }
 
         return root
     }

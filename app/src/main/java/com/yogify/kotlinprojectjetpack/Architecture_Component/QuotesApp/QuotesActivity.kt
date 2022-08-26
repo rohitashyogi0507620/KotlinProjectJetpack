@@ -23,11 +23,7 @@ class QuotesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quotes)
-        mainViewModule = ViewModelProvider(
-            this,
-            ViewModuleFactory(application)
-        ).get(MainViewModule::class.java)
-
+        mainViewModule = ViewModelProvider(this, ViewModuleFactory(application)).get(MainViewModule::class.java)
         setQuotes(mainViewModule.getQuotes())
 
     }

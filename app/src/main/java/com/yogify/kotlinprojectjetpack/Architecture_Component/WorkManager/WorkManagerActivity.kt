@@ -20,20 +20,20 @@ class WorkManagerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_work_manager)
+        binding =  DataBindingUtil.setContentView(this, R.layout.activity_work_manager)
 
-        quotesAPI = RetrofitHealper.getInstace().create(QuotesAPI::class.java)
-
-        GlobalScope.launch {
-            val result = quotesAPI.getQuotes(1)
-            if (result != null) {
-                quoteslist = result.body()!!.results
-                Log.d("DataSize", quoteslist.size.toString())
-                runOnUiThread(Runnable {
-
-                })
-            }
-        }
+//        quotesAPI = RetrofitHealper.getInstace().create(QuotesAPI::class.java)
+//
+//        GlobalScope.launch {
+//            val result = quotesAPI.getQuotes(1)
+//            if (result != null) {
+//                quoteslist = result.body()!!.results
+//                Log.d("DataSize", quoteslist.size.toString())
+//                runOnUiThread(Runnable {
+//
+//                })
+//            }
+//        }
     }
 
 
