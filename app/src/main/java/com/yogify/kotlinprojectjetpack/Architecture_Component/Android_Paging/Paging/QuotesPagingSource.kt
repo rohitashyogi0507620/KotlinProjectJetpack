@@ -3,9 +3,10 @@ package com.yogify.kotlinprojectjetpack.Architecture_Component.Android_Paging.Pa
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.yogify.kotlinprojectjetpack.Architecture_Component.Android_Paging.DataClass.Quotes
+import com.yogify.kotlinprojectjetpack.Architecture_Component.Hilt_Dependency.di.UserAPI
 import com.yogify.kotlinprojectjetpack.Architecture_Component.MvvmWithRetrofit_NewsApp.API.QuotesService
 
-class QuotesPagingSource(val quotesapi:QuotesService):PagingSource<Int,Quotes>() {
+class QuotesPagingSource(val quotesapi: QuotesService):PagingSource<Int,Quotes>() {
     override fun getRefreshKey(state: PagingState<Int, Quotes>): Int? {
         return  state.anchorPosition?.let { position->
             val anchoerpage=state.closestPageToPosition(position)

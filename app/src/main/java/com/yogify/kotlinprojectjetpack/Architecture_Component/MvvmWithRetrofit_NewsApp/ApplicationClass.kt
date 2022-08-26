@@ -30,8 +30,7 @@ class ApplicationClass : Application() {
     }
 
     fun SetWorker() {
-        val constraint =
-            androidx.work.Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED)
+        val constraint = androidx.work.Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED)
                 .build()
         val workerrequest = PeriodicWorkRequest.Builder(NewsWorker::class.java, 1, TimeUnit.MINUTES)
             .setConstraints(constraint)

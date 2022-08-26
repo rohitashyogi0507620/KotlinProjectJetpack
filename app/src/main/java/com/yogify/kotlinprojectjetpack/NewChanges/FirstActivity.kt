@@ -17,6 +17,7 @@ import com.yogify.kotlinprojectjetpack.R
 class FirstActivity : AppCompatActivity() {
     lateinit var txt: TextView
     lateinit var permissionbnt: Button
+
     private val contract = registerForActivityResult(Contract()) {
         txt.text = it
     }

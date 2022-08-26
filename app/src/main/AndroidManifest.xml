@@ -13,8 +13,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+<!--    android:name=".Architecture_Component.MvvmWithRetrofit_NewsApp.ApplicationClass"-->
+
     <application
-        android:name=".Architecture_Component.MvvmWithRetrofit_NewsApp.ApplicationClass"
+        android:name=".Architecture_Component.Hilt_Dependency.HiltApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,7 +25,7 @@
         android:theme="@style/Theme.KotlinProjectJetpack.NOActionABr"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Architecture_Component.Android_Paging.Hilt_Dependency.HiltActivity"
+            android:name="com.yogify.kotlinprojectjetpack.Architecture_Component.Hilt_Dependency.HiltActivity"
             android:exported="false"
             android:label="@string/title_activity_hilt"
             android:theme="@style/Theme.KotlinProjectJetpack.NOActionABr" />

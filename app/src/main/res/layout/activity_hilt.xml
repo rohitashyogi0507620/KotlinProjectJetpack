@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Architecture_Component.Android_Paging.Hilt_Dependency.HiltActivity">
+    tools:context=".Architecture_Component.Hilt_Dependency.HiltActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

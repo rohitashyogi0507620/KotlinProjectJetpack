@@ -31,6 +31,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/drawable/ic_writer.xml" value="0.189" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/font/biryani_extralight.xml" value="0.28229166666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_first.xml" value="0.24375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_hilt.xml" value="0.2390194075587334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_live_data.xml" value="0.19537037037037036" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_main.xml" value="0.19537037037037036" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_mvvm_retrofit.xml" value="0.17777777777777778" />
@@ -38,8 +39,11 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_quotes.xml" value="0.19555143651529194" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_retrofit.xml" value="0.24375" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/activity_second.xml" value="0.24375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/content_hilt.xml" value="0.1265625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/fragment_first.xml" value="0.24375" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/fragment_home.xml" value="0.24375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/fragment_registration.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/fragment_second.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/layout/item_newsarticle.xml" value="0.24375" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinProjectJetpack/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24375" />
       </map>

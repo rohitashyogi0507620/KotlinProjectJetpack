@@ -47,11 +47,11 @@
         android:onClick="fun_SingleRequestPermission"
         android:text="Request Single Permission"></Button>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:layout_width="wrap_content"
         android:id="@+id/btn_permission"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:enabled="false"
-        app:icon="@drawable/ic_notifications_black_24dp"></com.google.android.material.button.MaterialButton>
+        app:icon="@drawable/ic_notifications_black_24dp"></Button>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.yogify.kotlinprojectjetpack.Architecture_Component.Android_Paging.Hilt_Dependency
+package com.yogify.kotlinprojectjetpack.Architecture_Component.Hilt_Dependency
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
