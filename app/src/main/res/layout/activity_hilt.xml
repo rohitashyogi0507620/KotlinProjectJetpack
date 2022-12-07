@@ -18,12 +18,12 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/previous"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_input_add" />
 
 </RelativeLayout>

@@ -7,8 +7,10 @@ import javax.inject.Inject
 
 @HiltAndroidApp
 class HiltApplication:Application() {
+
     @Inject
     lateinit var userReposotory: UserReposotory
+
     override fun onCreate() {
         super.onCreate()
         userReposotory
